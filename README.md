@@ -1,3 +1,5 @@
+This repo modified from https://github.com/cawfree/create-react-native-dapp. All credit goes to him for the react-native integration
+
 # TypeScript Example
 
 <p>
@@ -34,3 +36,12 @@ TypeScript is a superset of JavaScript which gives you static types and powerful
 ## 📝 Notes
 
 - [Expo TypeScript guide](https://docs.expo.io/versions/latest/guides/typescript/)
+
+## Ally's readme
+
+When I created this project it threw an error and didn't load all the npm packages. So I used >npm install --legacy-peer-deps after this.
+
+I modified the index.js file from `const { default: App } = require("./frontend/App");` to `const { default: App } = require("./App");`
+
+Then couldn't get this to run on expo only - it showed only the splashscreen doing this. However, it is running on the web or on ios emulator IF I use > expo run:ios
+(Also treid removing the typescript dependency and running `EXPO_NO_TYPESCRIPT_SETUP=1 expo start` as mentioned above)
